@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <header>
+      <div class="out">
+        <a href="#"><h1>tilibra</h1></a>
+        <p>TC03</p>
+        <div id="black"></div>
+      </div>
+      <p id="digits">8 DIGITS</p>
+    </header>
+  
+    <main>
+      <p id="result"></p>
+        <table>
+          <!--tr define linha da tabela e td define a célula-->
+          <tr id="lineOne">
+            <td><button id="firstButton" onclick="insert('on/c')">ON/C</button></td>
+            <td><button onclick="insert('ce')">CE</button></td>
+            <td><button>MRC</button></td>
+            <td><button>M-</button></td>
+            <td><button>M+</button></td>
+          </tr>
+    
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('')">%</button></td>
+            <td><button onclick="insert('')">√</button></td>
+          </tr>
+  
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('*')">x</button></td>
+            <td><button onclick="insert('/')">÷</button></td>
+          </tr>
+    
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button id="sum" onclick="insert('+')">+</button></td>
+            <td><button onclick="insert('-')">-</button></td>
+          </tr>
+  
+          <tr>
+            <td><button onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">.</button></td>
+            <td><button onclick="insert('+|-')">+/-</button></td>
+            <td><button onclick="insert('=')">=</button></td>
+          </tr>
+        </table>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
